@@ -1,4 +1,5 @@
-<%--
+<%@ page import="pl.javagda28.CarServis.jsp.model.ServiceRequest.ServiceRequest" %>
+<%@ page import="java.net.ContentHandler" %><%--
   Created by IntelliJ IDEA.
   User: Marcin
   Date: 28.11.2019
@@ -7,6 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 
 <html>
@@ -36,16 +38,21 @@
     </tr>
 
     <c:forEach var="serviceRequest" items="${requestScope.serviceRequestList}" varStatus="loop">
+
         <tr>
             <td>${serviceRequest.getId()}</td>
             <td>${serviceRequest.getCreateDate()}</td>
-            <td>${serviceRequest.getCompletionDate()}</td>
+            <td>${serviceRequest.getDoneDate()}</td>
             <td>${serviceRequest.getContent()}</td>
             <td>${serviceRequest.isUrgent()}</td>
 
-
             <td><a href="/SERVICE-REQUEST-EDIT-SERVLET?serviceRequestIdNumber=${serviceRequest.getId()}">Edit</a></td>
-            <td><a href="/SERVICE-REQUEST-REMOVE-SERVLET?serviceRequestIdNumber=${serviceRequest.getId()}">Delete</a></td>
+            <td><a href="/SERVICE-REQUEST-REMOVE-SERVLET?serviceRequestIdNumber=${serviceRequest.getId()}">Delete</a>
+
+                <c:if test="${serviceRequest.getDoneDate()==null}">
+                      <td><a href="/SERVICE-REQUEST-DONE-SERVLET?serviceRequestIdNumber=${serviceRequest.getId()}">Done</a>
+                </c:if>
+            </td>
         </tr>
     </c:forEach>
 

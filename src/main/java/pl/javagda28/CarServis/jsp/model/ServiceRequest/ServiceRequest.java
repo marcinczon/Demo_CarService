@@ -3,18 +3,29 @@ package pl.javagda28.CarServis.jsp.model.ServiceRequest;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import pl.javagda28.CarServis.jsp.model.IBaseEntity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ServiceRequest
+public class ServiceRequest implements IBaseEntity
 {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Double id;
+
+    @CreationTimestamp
     LocalDateTime createDate;// (localdatetime)
-    LocalDateTime completionDate; //(ustawiamy na null, a jeśli data realizacji jest ustawiona, to jednoznacznie sugeruje że zlecenie jest wykonane) (localdatetime)
+
+    LocalDateTime doneDate; //(ustawiamy na null, a jeśli data realizacji jest ustawiona, to jednoznacznie sugeruje że zlecenie jest wykonane) (localdatetime)
     String content;
     boolean urgent;
 
@@ -23,7 +34,7 @@ public class ServiceRequest
     {
         private Double id;
         private LocalDateTime createDate;
-        private LocalDateTime realizedDate;
+        private LocalDateTime doneDate;
         private String content;
         private boolean urgent;
         private static double objectCounter = 0;
@@ -40,9 +51,9 @@ public class ServiceRequest
             return this;
         }
 
-        public ServiceRequestBuilder setRealizedDate(LocalDateTime realizedDate)
+        public ServiceRequestBuilder setDoneDate(LocalDateTime doneDate)
         {
-            this.realizedDate = realizedDate;
+            this.doneDate = doneDate;
             return this;
         }
 
@@ -63,10 +74,10 @@ public class ServiceRequest
             objectCounter++;
             this.id = objectCounter;
             this.createDate = LocalDateTime.now();
-            this.realizedDate = null;
+            this.doneDate = null;
 
             // return new ServiceRequest(content,urgent);
-            return new ServiceRequest(id, createDate, realizedDate, content, urgent);
+            return new ServiceRequest(id, createDate, doneDate, content, urgent);
         }
     }
 

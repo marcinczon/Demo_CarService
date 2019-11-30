@@ -6,7 +6,41 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95a65780-0ae9-4521-ad6f-b01e69db702a" name="Default Changelist" comment="" />
+    <list default="true" id="95a65780-0ae9-4521-ad6f-b01e69db702a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/Database/EntityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/Database/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/model/IBaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/servlets/ServiceRequest/ServiceRequestDoneServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/model/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/model/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP-ServiceRequest/SERVICE-REQUEST-FORM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP-ServiceRequest/SERVICE-REQUEST-FORM.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP-ServiceRequest/SERVICE-REQUEST-LIST.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP-ServiceRequest/SERVICE-REQUEST-LIST.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/JSP-ServiceRequest/SERVICE-REQUEST-FORM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/JSP-ServiceRequest/SERVICE-REQUEST-FORM.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/JSP-ServiceRequest/SERVICE-REQUEST-LIST.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/JSP-ServiceRequest/SERVICE-REQUEST-LIST.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest$ServiceRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest$ServiceRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Servlety_SerwisSamochodowy/WEB-INF/classes/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/model/Car/Car$CarBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/model/Car/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/model/Car/CarBrands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest$ServiceRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/model/ServiceRequest/ServiceRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/service/Car/CarService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/service/ServiceRequest/ServiceRequestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/Car/CarAddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/Car/CarEditServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/Car/CarListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/Car/CarRemoveServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/ServiceRequest/ServiceRequestAddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/ServiceRequest/ServiceRequestEditServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/ServiceRequest/ServiceRequestListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/javagda28/CarServis/jsp/servlets/ServiceRequest/ServiceRequestRemoveServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +70,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -44,7 +81,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1UFtqc7RRG1JEzqsREuRR8kko3q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/JSP-ServiceRequest" />
@@ -223,11 +262,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574964363166</updated>
-      <workItem from="1574964366993" duration="19749000" />
+      <workItem from="1574964366993" duration="26935000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

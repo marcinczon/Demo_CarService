@@ -4,15 +4,25 @@ package pl.javagda28.CarServis.jsp.model.Car;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pl.javagda28.CarServis.jsp.model.IBaseEntity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Car
+public class Car implements IBaseEntity
 {
     private static double carCounter = 0;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Double id;
+
     private CarBrands brand;
     private String registrationNumber;
     private String ownerSecondName;

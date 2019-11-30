@@ -3,6 +3,7 @@ package pl.javagda28.CarServis.jsp.service.ServiceRequest;
 import pl.javagda28.CarServis.jsp.model.ServiceRequest.ServiceRequest;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -55,4 +56,16 @@ public enum ServiceRequestService
     }
 
 
+    public void setDone(String serviceRequestIdNumber)
+    {
+        final Optional<ServiceRequest> optionalServiceRequest = this.getServiceRequest(Double.valueOf(serviceRequestIdNumber));
+        if (optionalServiceRequest.isPresent())
+        {
+            optionalServiceRequest.get().setDoneDate(LocalDateTime.now());
+        }
+        else
+        {
+            System.out.println("ServiceRequest nie istnieje -> setDone()");
+        }
+    }
 }
